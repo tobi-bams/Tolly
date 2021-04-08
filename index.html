@@ -31,7 +31,7 @@
                 <img src="./assets/lock.svg" alt="lock" class="lock">
                 <div class="privacyDetail">
                     <h4>Card is secure</h4>
-                    <p>Your data is protected, everything will be private</p>
+                    <p>Your data is protected,<br> everything will be private</p>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
         <div class="paymentNavigation">
             <ul>
                 <li>
-                    <a href="#">Credit Card</a>
+                    <a href="#" class="activeLink">Credit Card</a>
                 </li>
                 <li>
                     <a href="#">Pay Pal</a>
@@ -53,19 +53,21 @@
         <!-- Credit Card Details -->
         <div class="creditCardDetail">
             <div class="cardContainer">
-                <div class="cards">
+                <div class="cards card1">
                     <div class="contents">
                         <p>**** 4323</p>
                         <img src="./assets/mc_symbol.svg" alt="Master Card" class="masterCard">
                     </div>
                 </div>
-                <div class="cards">
+                <div class="cards card2">
                     <div class="contents">
                         <p>**** 5442</p>
-                        <img src="./assets/visa.svg" alt="Visa Card" class="visaCard">
+                        <div class="cardImageContainer">
+                            <img src="./assets/visa.svg" alt="Visa Card" class="visaCard">
+                        </div>
                     </div>
                 </div>
-                <div class="cards">
+                <div class="cards card3">
                     <div class="addNew">
                         <p>Add New <span class="plusSign">+</span></p>
                     </div>
@@ -77,20 +79,20 @@
             <form class="cardForm">
                 <div class="inputFields">
                     <label>Credit card</label>
-                    <input placeholder="Credit Card">
+                    <input placeholder="Credit Card" id="cardNumber" type="text" value="4441 2354 3266 5655">
                 </div>
                 <div class="inputFields">
                     <label>Name</label>
-                    <input placeholder="Name">
+                    <input placeholder="Name" type="text" value="Annette Murphy">
                 </div>
                 <div class="moreForm">
                     <div class="inputFields">
                         <label>Expiration Date</label>
-                        <input placeholder="Expiry date">
+                        <input placeholder="Expiry date" type="text" value = "08/2021">
                     </div>
                     <div class="inputFields">
                         <label>CVV</label>
-                        <input placeholder="CVV">
+                        <input placeholder="CVV" type="text" id="cvv" value="407">
                     </div>
                 </div>
                 <div class="buttonContainer">
@@ -107,7 +109,7 @@
     <h2>Order summary</h2>
     <div class="stepsContainer">
         <div class="steps">
-            <div class="imgContainer">
+            <div class="imgContainer imgContainer1">
                 <img src="./assets/shopping-cart.svg" alt="Shopping Cart" class="stepsImage">
             </div>
             <div class="stepsInfo">
@@ -116,16 +118,16 @@
             </div>
         </div>
         <div class="steps">
-            <div class="imgContainer">
+            <div class="imgContainer imgContainer2">
                 <img src="./assets/card.svg" alt="Card" class="stepsImage">
             </div>
             <div class="stepsInfo">
                 <p>Step 2</p>
-                <p>Payment</p>
+                <p id="activeStep">Payment</p>
             </div>
         </div>
         <div class="steps">
-            <div class="imgContainer">
+            <div class="imgContainer imgContainer3">
                 <img src="./assets/reload.svg" alt="Review" class="stepsImage">
             </div>
             <div class="stepsInfo">
@@ -139,19 +141,19 @@
         <img src="./assets/arrow-down.svg" class="activeDropDown" alt="Drop Down">
     </div>
     <div class="itemsDetail">
-        <p>Leather mini-bag</p>
+        <p class="itemTitle">Leather mini-bag</p>
         <p class="amount">$1850.00</p>
     </div>
     <div class="itemsDetail">
-        <p>Estimated shipping</p>
+        <p class="itemTitle">Estimated shipping</p>
         <p class="amount">$370.00</p>
     </div>
     <div class="itemsDetail">
-        <p>Discount</p>
+        <p class="itemTitle">Discount</p>
         <p class="amount">$0.00</p>
     </div>
     <div class="itemsDetail">
-        <p>Total</p>
+        <p class="itemTitle">Total</p>
         <p class="amount">$2220.00</p>
     </div>
     <div class="moreInforHeader">
@@ -163,7 +165,7 @@
         <img src="./assets/arrow-down.svg" class="arrowDown" alt="Drop Down">
     </div>
     <div class="totalContainer">
-        <p>Total Amount</p>
+        <p class="totalTitle">Total Amount</p>
         <p class="totalAmount">$3680.60</p>
     </div>
   </aside> 

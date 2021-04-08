@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+body {
+    display: flex;
+    background-color: rgba(244,248,249,255);
+    padding: 1.5em;
+    font-family: poppins;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255,255,255,255);
+    border-radius: 1rem;
+    padding: 5em;
+    width: 60%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 3.5em;
+    width: 3.5em;
+    border-radius: 0.5em;
+    margin-right: 1em;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    background-color: rgba(244,248,249,255);
+    height: 3em;
+    border-radius: 1.5em;
+}
+
+.arrowDown {
+    height: 2em;
+    width: 2em;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+.profile p {
+    margin-left: 1em;
+    font-weight: 600;
+}
+
+.userImage {
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    margin-left: 1em;
+}
+
+/* Payment Details */
+
+.paymentDetailContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.paymentDetailsHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+}
+
+.paymentDetailsHeader h2{
+    letter-spacing: 2px;
+}
+
+.privacyContainer {
+    display: flex;
+}
+
+.privacyDetail p {
+    color: #dcdcdc;
+    font-size: 0.8rem;
+}
+
+.lock {
+    height: 2em;
+    width: 2em;
+    margin-right: 0.2em;
+}
+
+.paymentNavigation ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    height: 2.5em;
+    border-bottom: 2px solid rgba(245,245,245,255);
+}
+
+.paymentNavigation ul li a{
+    text-decoration: none;
+    color: rgba(140,140,140,255);
+    margin-right: 3em;
+    display: flex;
+    height: 2.5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.activeLink {
+    border-bottom: 2px solid rgba(100,112,112,255);
+}
+
+/* Credit Card Details */
+.creditCardDetail {
+    display: flex;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.cards {
+    height: 9em;
+    width: 15em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.contents p{
+    font-weight: 600;
+}
+
+.card1 {
+    background-color: rgba(207,217,253,255);
+}
+
+.card2 {
+    background-color: rgba(248,203,161,255);
+}
+
+.card3 {
+    position: relative;
+    background-color: rgba(189,219,167,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardImageContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.masterCard, .visaCard {
+    height: 3em;
+    width: 4em;
+    margin-top: 3em;
+}
+
+.tick {
+    position: absolute;
+    background-color: rgba(87,109,66,255);
+    height: 1.5em;
+    width: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    left: 14em;
+    bottom: 8em;
+}
+
+.checkSolid {
+    height: 0.8em;
+    width: 0.8em;
+}
+
+.addNew {
+    display: flex;
+    align-items: center;
+}
+
+.addNew p {
+    display: flex;
+}
+
+.plusSign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #384832;
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    color: white;
+    margin-left: 0.5em;
+}
+
+.cardForm {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+}
+
+.inputFields {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.inputFields label {
+    color: #c8c8c8;
+}
+
+.inputFields input {
+    width: 100%;
+    border: none;
+    padding: 1em;
+    background-color: rgba(244,248,249,255);
+    font-size: 1em;
+    border-radius: 10px;
+    outline: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+#cardNumber {
+    background-image: url('./assets/mc_symbol.svg');
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position-x: 95%;
+    background-position-y: center;
+}
+
+#cvv {
+    background-image: url('./assets/visible.svg');
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position-x: 90%;
+    background-position-y: center;
+    width: 65%;
+}
+
+.moreForm {
+    display: flex;
+}
+
+.moreForm .inputFields {
+    margin-right: 3em;
+}
+
+.buttonContainer {
+    margin-top: 2em;
+}
+
+.buttonContainer button {
+    height: 4em;
+    width: 10em;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+.confirmOrder {
+    background-color: rgba(0,0,0,255);
+    color: white;
+    border-radius: 10px;
+}
+
+.cancle {
+    background-color: transparent;
+    color: #cacaca;
+}
+
+/* Order Summary Section */
+aside {
+    display: flex;
+    flex-direction: column;
+    padding: 5em 2.5em;
+    width: 40%;
+}
+
+aside h2 {
+    letter-spacing: 2px;
+}
+
+.stepsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+}
+
+.steps {
+    display: flex;
+    align-items: center;
+}
+
+.stepsInfo p {
+    font-size: 0.9rem;
+    color: #bbbfc0;
+}
+
+#activeStep {
+    font-weight: 700;
+    color: black;
+}
+
+.imgContainer {
+    height: 3em;
+    width: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 0.7em;
+}
+
+.imgContainer1 {
+    background-color: #d1d9fd;
+}
+
+.imgContainer2 {
+    background-color: #facda0;
+}
+
+.imgContainer3 {
+    background-color: #bfdba6;
+}
+
+.stepsImage {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.activeDropDown {
+    height: 2em;
+    width: 2em;
+    cursor: pointer;
+    transform: rotateX(180deg);
+}
+
+.moreInforHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 3em;
+}
+
+.moreInforHeader p {
+    font-weight: 600;
+}
+
+.itemsDetail {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    margin-top: 0.5em;
+}
+
+.itemTitle {
+    color: #97989a;
+}
+
+.amount {
+    color: #353736;
+    font-weight: 600;
+}
+
+.totalContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.totalTitle {
+    color: #555756;
+    font-weight: 500;
+}
+
+.totalAmount {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
