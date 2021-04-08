@@ -8,7 +8,7 @@ body {
     display: flex;
     background-color: rgba(244,248,249,255);
     padding: 1.5em;
-    font-family: poppins;
+    font-family: 'Poppins';
 }
 
 main {
